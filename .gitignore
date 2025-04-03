@@ -82,6 +82,9 @@ target/
 profile_default/
 ipython_config.py
 
+# Google Service Account Credentials
+backend/video-interview-platform-4a052cd5423b.json
+
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
@@ -135,6 +138,13 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+backend/.env
+backend/venv
+frontend/.env
+
+# Frontend environments
+frontend/node_modules/
+frontend/.env
 
 # Spyder project settings
 .spyderproject
