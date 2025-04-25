@@ -49,7 +49,7 @@ def upload_recording(link_id):
     if 'video' not in request.files:
         return jsonify({"error": "No video file part"}), 400
     
-    file = request.files['video']
+    file = request.files.get('video', '')
     question_index = request.form.get('questionIndex', 'unknown')
 
     if file.filename == '':
